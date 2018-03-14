@@ -6,13 +6,19 @@
 package L5_U5;
 
 import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
 /**
  *
  * @author 24740
  */
 public class FriendApp {
     public static void main(String[] args)throws FileNotFoundException {
+        try {
             FriendArray f = new FriendArray();
-        System.out.println(f.toString());
+            FriendSearch s = new FriendSearch();
+            System.out.println(f.toString() + "\nThe Search Results:\n" + s);
+    } catch (InputMismatchException e) {
+    System.out.print(e.getMessage()); 
+        }                  
     }
 }

@@ -21,14 +21,14 @@ public class FriendArray {
             int age;
             while(scFile.hasNext()){                                            //looks through text file
                 line = scFile.nextLine();                                       //looks at line by line
-                Scanner sc = new Scanner(line).useDelimiter("#");               //reads each token
-                name = scFile.next();                                           //extracts...
-                height = scFile.nextDouble();
-                age = scFile.nextInt();
+                Scanner scLine = new Scanner(line).useDelimiter("#");           //reads each token
+                name = scLine.next();                                           //extracts...
+                height = scLine.nextDouble();
+                age = scLine.nextInt();
                 fa[size] = new Friend(name,height,age);                         //adds object to array or scFile.next() instead of...
-                size++;
+                size++;            
             }       
-            scFile.close();
+            scFile.close();            
         }
         catch (FileNotFoundException e){
             System.out.println("File not found, check file path");
