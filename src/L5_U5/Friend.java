@@ -40,7 +40,4 @@ public class Friend {                           //Definition class (defines frie
     public String toString(){                                                   
     return getName() + "\t" + getHeight() + "\t" + getAge();
     }
-    public static void main(String[] args) {
-        
-    }
 }

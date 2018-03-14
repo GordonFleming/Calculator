@@ -6,13 +6,12 @@
 package L5_U5;
 
 import java.io.FileNotFoundException;
-
 /**
  *
  * @author 24740
  */
 public class FriendApp {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args)throws FileNotFoundException {
             FriendArray f = new FriendArray();
         System.out.println(f.toString());
     }

@@ -15,7 +15,7 @@ public class FriendArray {
     private Friend [] fa = new Friend[20];                                      //The amount of object elements
     private int size = 0;
     public FriendArray()throws FileNotFoundException{
-        try(Scanner scFile = new Scanner (new File ("Freinds.txt"))){           //works with the catch (try then catch)
+        try(Scanner scFile = new Scanner (new File ("Friends.txt"))){           //works with the catch (try then catch)
             String line,name;
             double height;
             int age;
