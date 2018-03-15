@@ -14,9 +14,8 @@ import java.util.InputMismatchException;
 public class FriendApp {
     public static void main(String[] args)throws FileNotFoundException {
         try {
-            FriendArray f = new FriendArray();
-            FriendSearch s = new FriendSearch();
-            System.out.println(f.toString() + "\nThe Search Results:\n" + s);
+            FriendArray f = new FriendArray();            
+            System.out.println(f.toString());
     } catch (InputMismatchException e) {
     System.out.print(e.getMessage()); 
         }                  
