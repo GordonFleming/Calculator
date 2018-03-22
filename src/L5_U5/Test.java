@@ -11,14 +11,8 @@ import java.util.Scanner;
  */
 public class Test {
     public static void main(String[] args) {
-        String w1 = "";
-        String w2 = "";
-        System.out.println("Type in 'Simon': ");
-        Scanner input = new Scanner (System.in);
-        w2 = input.next(); 
-        while(!w1.equals("Simon")){
-            w1 += w2;
-        }
-        System.out.print(w2);
+        String year = "(2001)";
+        String newYear = year.replaceAll("^()","");
+        System.out.print(newYear);
     }
 }
