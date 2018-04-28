@@ -1,15 +1,15 @@
-Volkswagen, Germany. Volkswagen Motorsport, Sebastien Ogier France Julien Ingrassia, France
-Volkswagen, Germany, Volkswagen Motorsport, Jari-Matti Latvala. Finalnd, Miikka Anttila, Finalnd
-Citroen France, Citroen Total Abu Dhabi World Rally Team.Kris Meeke UK Paul Nagle, Ireland
-Volkswagen.Germany, Volkswagen Motorsport II. Andreas Mikkelsen Norway.Ola Floene. Norway
-Citroen France, Citroen Total Abu Dhabi World Rally Team Sebastien Loeb France. Daniel Elena, Monaco
-Citroen France.Citroen Total Abu Dhabi World Rally Team Mads Ostbera.Norway.Jonas Andersson,sweden
-Ford, UK M-Sport World Rally Team, Elfyn Evans, UK,Daniel Barritt, UK
-Ford, UK M-Sport World Rally Team, Ott Tenak, Estonia, Raigo Mulder Estonia
+Volkswagen, Germany. Volkswagen Motorsport, Sebastien Ogier, France, Julien Ingrassia, France
+Volkswagen, Germany, Volkswagen Motorsport, Jari-Matti Latvala, Finalnd, Miikka Anttila, Finalnd
+Citroen France, Citroen Total, Abu Dhabi World Rally Team,Kris Meeke, UK, Paul Nagle, Ireland
+Volkswagen,Germany, Volkswagen Motorsport II, Andreas Mikkelsen Norway,Ola Floene, Norway
+Citroen France, Citroen Total Abu Dhabi World Rally Team Sebastien Loeb France, Daniel Elena, Monaco
+Citroen France,Citroen Total Abu Dhabi World Rally Team Mads Ostbera.Norway,Jonas Andersson,sweden
+Ford, UK, M-Sport World Rally Team, Elfyn Evans, UK,Daniel Barritt, UK
+Ford, UK, M-Sport World Rally Team, Ott Tenak, Estonia, Raigo Mulder Estonia
 Hyundai, Germany, Hyundai Motorsport, Thierry Neuville Germany, Nicolas Gilsoul, Germany
 Ford, Czech Republic, Jipocar Czech National Team, Martin Prokop Czech Republic, Jan Tomnek, Czech Republic
-Ford, Italy.FWRT s.r.l. Lorenzo Bertelli, Italy, Giovanni Bernacchini, Italy
+Ford, Italy,FWRT s.r.l. Lorenzo Bertelli, Italy, Giovanni Bernacchini, Italy
 Hyundai, Germany, Hyundai Motorsport, Dani Sordo, Spain, Marc Marte, Spain
-Hyundai, Germany. Hyundai Motorsport, Hayden Paddon, New Zealand, John Kennard, New Zealand
-Hyundai Germany, Hyundai Motorsport N.Kevin Abbring.Netherlands, Sebastian Marshall, UK
-Hyundai, Germany, Hyundai Motorsport N.Hayden Paddon New Zealand, John Kennard, New Zealand
+Hyundai, Germany, Hyundai Motorsport, Hayden Paddon, New Zealand, John Kennard, New Zealand
+Hyundai Germany, Hyundai Motorsport N,Kevin Abbring,Netherlands, Sebastian Marshall, UK
+Hyundai, Germany, Hyundai Motorsport N,Hayden Paddon New Zealand, John Kennard, New Zealand
