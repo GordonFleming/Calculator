@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nov_Exams;
+package calculator;
 
 /**
  * In a specific case which scanario is best to earn the most

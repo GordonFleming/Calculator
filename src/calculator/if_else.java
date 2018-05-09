@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nov_Exams;
+package calculator;
 
 /**
  * Compares various Scanarios of wether what is what due to specified classifications

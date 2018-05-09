@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nov_Exams;
+package calculator;
 import java.util.Scanner;
 /**
  * Gets user Input and outputs the 12 multiplication table

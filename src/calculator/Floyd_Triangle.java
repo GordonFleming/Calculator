@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nov_Exams;
+package calculator;
 import java.util.Scanner;
 /**
  * Gets user input for number of rows then add number after each loop
