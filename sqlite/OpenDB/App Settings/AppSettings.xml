@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BridgePackage>
+  <App Name="Application1" Version="1.0" GUID="AP5FAF5D312A6D42798C37457701220BCD7E250D18026000000C001E0000180260000001000010000000000000000000000000000000000000000000000000000000000000000071" Description="" FullApp="True" DataPackage="True" BridgeVersionCreated="12.3" BridgeVersionChanged="" ObjectDateCreated="2018-05-13T09:19:11" ObjectDateChanged="" ExportFormat="Custom" DistributionMode="Standard" AuthorID="18026000">
+    <AppObjects>
+      <Object Type="TB" GUID="TB9F451426E9814489B7FCE5987008FFF87E250D18026000000C001E0000180260000001000010000000000000000000000000000000000000000000000000000000000000000095" Name="Members_List" AppInitialSignature="1802600000010000" ObjectInitialSignature="1802600000010000" ObjectDateAdded="" BridgeVersionCreated="11.0" BridgeVersionChanged="11.0" ObjectDateCreated="2018-02-11T17:16:11" ObjectDateChanged="2018-04-14T11:45:38" DefaultImportAction="NEW" File="Members_List_2018-May-13_1619.csv" DataDateUpdated="2018-04-06T14:13:10" FileType="TextTables" HasColumnHeader="True" FileFormat="CSVDelimited" />
+    </AppObjects>
+  </App>
+</BridgePackage>
