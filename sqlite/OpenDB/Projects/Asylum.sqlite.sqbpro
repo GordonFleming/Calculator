@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\24740\Desktop\NetBeansProjects\Calculator\sqlite\OpenDB\Asylum.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="585"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblCountries"/><default_encoding codec=""/><browsetable_info data="AAAAAQAAABgAdABiAGwAQwBvAHUAbgB0AHIAaQBlAHMAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select *
+from tblCountries
+order by Continent,Country
+</sql><sql name="SQL 2">delete
+from tblCountries
+where Country = 'Canada'</sql><sql name="SQL 3">insert into tblCountries(Country,Continent)
+values('Norway','Europe')</sql><sql name="SQL 4">update tblStatistics
+set Acceptances = Acceptances+500
+where Country 
+in ('Germany','France')</sql><current_tab id="3"/></tab_sql></sqlb_project>
