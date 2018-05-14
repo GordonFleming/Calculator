@@ -1,10 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\24740\Desktop\NetBeansProjects\Calculator\sqlite\OpenDB\Asylum.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="585"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblCountries"/><default_encoding codec=""/><browsetable_info data="AAAAAQAAABgAdABiAGwAQwBvAHUAbgB0AHIAaQBlAHMAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select *
-from tblCountries
-order by Continent,Country
-</sql><sql name="SQL 2">delete
-from tblCountries
-where Country = 'Canada'</sql><sql name="SQL 3">insert into tblCountries(Country,Continent)
-values('Norway','Europe')</sql><sql name="SQL 4">update tblStatistics
-set Acceptances = Acceptances+500
-where Country 
-in ('Germany','France')</sql><current_tab id="3"/></tab_sql></sqlb_project>
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/Asylum.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1010"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblCountries"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABoAdABiAGwAUwB0AGEAdABpAHMAdABpAGMAcwAAAAIAAAAAAAAAAwAAAAQAAACCAAAAAwAAAHkAAAABAAAAhQAAAAAAAAAAAP//////////AAAAAP////8AAAAYAHQAYgBsAEMAbwB1AG4AdAByAGkAZQBzAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAD//////////wAAAAD/////"/></tab_browse><tab_sql><sql name="SQL 1">select *
+from tblCountries
+order by Continent,Country
+</sql><sql name="SQL 2">delete
+from tblCountries
+where Country = 'Canada'</sql><sql name="SQL 3">insert into tblCountries(Country,Continent)
+values('Norway','Europe')</sql><sql name="SQL 4">update tblStatistics
+set Acceptances = Acceptances+500
+where Country 
+in ('Germany','France')</sql><sql name="SQL 6">select Country, substr(Country,1,2) || substr(Country,length(Country)+1,-3) as Code    --Creates temporary column
+from tblCountries
+where Continent = 'Europe'
+
+</sql><sql name="SQL 9">select Country,Acceptances
+from tblStatistics</sql><sql name="SQL 12">select *
+from tblStatistics
+where Applications &gt;100000</sql><sql name="SQL 13">select *
+from tblStatistics
+order by Applications-Acceptances
+limit 5</sql><sql name="SQL 11">select *,avg(Acceptances)
+from tblStatistics
+group by Country
+having avg(Acceptances)&gt;10000 --having used instead of where for grouping
+
+
+</sql><sql name="SQL 12">select left (Country,2) as FirstTwo
+from tblCountries</sql><current_tab id="4"/></tab_sql></sqlb_project>
