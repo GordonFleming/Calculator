@@ -7,14 +7,16 @@ where Country = 'Canada'</sql><sql name="SQL 3">insert into tblCountries(Country
 values('Norway','Europe')</sql><sql name="SQL 4">update tblStatistics
 set Acceptances = Acceptances+500
 where Country 
-in ('Germany','France')</sql><sql name="SQL 6">select Country, substr(Country,1,2) || substr(Country,length(Country)+1,-3) as Code    --Creates temporary column
+in ('Germany','France')</sql><sql name="SQL 6">select Country, substr(Country,1,2) || substr(Country,length(Country)+1,-3) as Code    --Creates temporary column
 from tblCountries
 where Continent = 'Europe'
 
 </sql><sql name="SQL 9">select Country,Acceptances
 from tblStatistics</sql><sql name="SQL 12">select *
 from tblStatistics
-where Applications &gt;100000</sql><sql name="SQL 13">select *
+where Applications &gt;100000 --&amp; where Date = '2015-01-20 00:00:00'
+
+</sql><sql name="SQL 13">select *
 from tblStatistics
 order by Applications-Acceptances
 limit 5</sql><sql name="SQL 11">select *,avg(Acceptances)
@@ -23,5 +25,4 @@ group by Country
 having avg(Acceptances)&gt;10000 --having used instead of where for grouping
 
 
-</sql><sql name="SQL 12">select left (Country,2) as FirstTwo
-from tblCountries</sql><current_tab id="4"/></tab_sql></sqlb_project>
+</sql><current_tab id="6"/></tab_sql></sqlb_project>
