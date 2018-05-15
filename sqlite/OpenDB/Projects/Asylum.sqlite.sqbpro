@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/Asylum.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1010"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblCountries"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABoAdABiAGwAUwB0AGEAdABpAHMAdABpAGMAcwAAAAIAAAAAAAAAAwAAAAQAAACCAAAAAwAAAHkAAAABAAAAhQAAAAAAAAAAAP//////////AAAAAP////8AAAAYAHQAYgBsAEMAbwB1AG4AdAByAGkAZQBzAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAD//////////wAAAAD/////"/></tab_browse><tab_sql><sql name="SQL 1">select *
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/Asylum.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1010"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblStatistics"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABoAdABiAGwAUwB0AGEAdABpAHMAdABpAGMAcwAAAAIAAAAAAAAAAwAAAAQAAACCAAAAAwAAAHkAAAABAAAAzwAAAAAAAAAAAP//////////AAAAAP////8AAAAYAHQAYgBsAEMAbwB1AG4AdAByAGkAZQBzAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAD//////////wAAAAD/////"/></tab_browse><tab_sql><sql name="SQL 1">select *
 from tblCountries
 order by Continent,Country
 </sql><sql name="SQL 2">delete
@@ -14,8 +14,9 @@ where Continent = 'Europe'
 </sql><sql name="SQL 9">select Country,Acceptances
 from tblStatistics</sql><sql name="SQL 12">select *
 from tblStatistics
-where Applications &gt;100000 --&amp; where Date = '2015-01-20 00:00:00'
-
+where Applications &gt;100000 
+and Date /*Can add [] as func = column name*/ like '%08%' --strftime('%m',Date,) = 08    (IDK)
+
 </sql><sql name="SQL 13">select *
 from tblStatistics
 order by Applications-Acceptances
