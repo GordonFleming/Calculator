@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/24740/Desktop/NetBeansProjects/Calculator/sqlite/OpenDB/Golf.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="851"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblPlayers"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABQAdABiAGwAUABsAGEAeQBlAHIAcwAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8AAAAcAHQAYgBsAEMAbwBtAHAAZQB0AGkAdABpAG8AbgAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select * 
+from tblPlayers
+where handicap between 0 and 9</sql><sql name="SQL 2">select gender,count(gender) as total
+from tblPlayers
+group by gender
+</sql><sql name="SQL 3">select handicap, count(handicap) as HandicapTotal --Creates temp column
+from tblPlayers									  --Can't do maths functions other than 											      
+group by handicap                                 --in select
+having count(handicap)&gt;=3
+
+ </sql><sql name="SQL 4">select handicap, count(handicap) as HandicapTotal 
+from tblPlayers	
+where gender='M'									--no an aggregate function						  					      
+group by handicap                                   --where before grouping
+</sql><sql name="SQL 5">select *	--,avg(handicap) as AVE	aggregate function only in select
+from tblPlayers
+where handicap &lt; (select avg(handicap)from tblPlayers)	--nested select
+
+</sql><sql name="SQL 7">select substr(firstName,1,3)--|| substr(firstName, ) as
+from tblPlayers</sql><current_tab id="5"/></tab_sql></sqlb_project>
