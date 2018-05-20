@@ -1,3 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/24740/Desktop/NetBeansProjects/Calculator/sqlite/OpenDB/ExcelHigh.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="764"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Pupils"/><default_encoding codec=""/><browsetable_info data="AAAAAwAAABAAUwB1AGIAagBlAGMAdABzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////wAAAAwAUAB1AHAAaQBsAHMAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////wAAAAD/////AAAAGgBQAHUAcABpAGwAUwB1AGIAagBlAGMAdABzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">select *
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/ExcelHigh.sqlite" foreign_keys="1"/><window><current_tab id="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1010"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Pupils"/><default_encoding codec=""/><browsetable_info data="AAAAAwAAABAAUwB1AGIAagBlAGMAdABzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////wAAAAwAUAB1AHAAaQBsAHMAAAAAAAAAAAAAAAIAAAAGAAAAyQAAAAIAAADlAAAAAAAAAAAA//////////8AAAAA/////wAAABoAUAB1AHAAaQBsAFMAdQBiAGoAZQBjAHQAcwAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select *
+from Pupils
+order by </sql><sql name="SQL 3">select *
+from Pupils
+order by pgrade, pclass, pname</sql><sql name="SQL 4">update Pupils
+set ID = substr(&quot;PDate of Birth&quot;,1,4) || substr(&quot;PName&quot;,2,2)</sql><sql name="SQL 5">insert into Pupils(PName,PGrade,PClass,PHouse,&quot;PDate of Birth&quot;,PGender)
+values('Fleming, Gordon','11','R','M','2001-09-17 00:00:00','M')</sql><sql name="SQL 6">select pgrade, count(pgrade) as TotalperGrade
 from Pupils
-order by </sql><current_tab id="0"/></tab_sql></sqlb_project>
+group by pgrade
+order by pgrade desc </sql><sql name="SQL 7">select *
+from Pupils
+where PGender = 'M' and (PGrade = '10' or PGrade = '11')		--Have to encapsulate with ( )</sql><sql name="SQL 9">select </sql><current_tab id="6"/></tab_sql></sqlb_project>
