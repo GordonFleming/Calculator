@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/Golf.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1010"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblPlayers"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABQAdABiAGwAUABsAGEAeQBlAHIAcwAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8AAAAcAHQAYgBsAEMAbwBtAHAAZQB0AGkAdABpAG8AbgAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select * 
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/24740/Desktop/NetBeansProjects/Calculator/sqlite/OpenDB/Golf.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="851"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblPlayers"/><default_encoding codec=""/><browsetable_info data="AAAAAgAAABQAdABiAGwAUABsAGEAeQBlAHIAcwAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8AAAAcAHQAYgBsAEMAbwBtAHAAZQB0AGkAdABpAG8AbgAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select * 
 from tblPlayers
 where handicap between 0 and 9</sql><sql name="SQL 2">select gender,count(gender) as total
 from tblPlayers
@@ -16,5 +16,20 @@ group by handicap                                   --where before grouping
 from tblPlayers
 where handicap &lt; (select avg(handicap)from tblPlayers)	--nested select
 
-</sql><sql name="SQL 7">select substr(firstName,1,3) || substr(firstName,length(LastName)-1,2) as 'FIRST&amp;Last'
-from tblPlayers</sql><current_tab id="4"/></tab_sql></sqlb_project>
+</sql><sql name="SQL 7">select substr(firstName,1,3) || substr(LastName,1,3) || handicap as 'LogicName'
+from tblPlayers</sql><sql name="SQL 8">select distinct handicap
+from tblPlayers</sql><sql name="SQL 9">select *
+from tblPlayers
+order by handicap desc
+limit 2</sql><sql name="SQL 10">select gender,round(avg(handicap),0) as average		--Round(...,to what decimal place)
+from tblPlayers
+group by gender</sql><sql name="SQL 11">select *
+from tblPlayers
+where membExpire &gt; date('now')		--Selects every date that hasn't expired</sql><sql name="SQL 12">select *
+from tblPlayers
+--where handicap = 0 or handicap = 1 or handicap = 7		instead use...
+where handicap /*not*/ in (0,1,7)		--also use strings</sql><sql name="SQL 13">select * 
+from tblPlayers
+where membExpire is not null			--NULL </sql><sql name="SQL 14">select *
+from tblPlayers
+where firstName like 'J%'		--wildcard is % not *</sql><current_tab id="3"/></tab_sql></sqlb_project>
