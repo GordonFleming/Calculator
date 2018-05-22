@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/OpenDB/Animals.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1472"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblAnimals"/><default_encoding codec=""/><browsetable_info data="AAAAAQAAABQAdABiAGwAQQBuAGkAbQBhAGwAcwAAAAUAAAAAAAAAAwAAAAkAAACkAAAABgAAAHEAAAAFAAAAcgAAAAAAAAAAAP//////////AAAAAP////8="/></tab_browse><tab_sql><sql name="SQL 1">select *
+from tblAnimals
+order by Class,Name</sql><sql name="SQL 2">select *,substr(Name,1,2) || &quot;Life span (years)&quot; as Code
+from tblAnimals</sql><sql name="SQL 3">select count(Name) as 'amount of animals with fur'
+from tblAnimals
+where covering = 'Fur'</sql><sql name="SQL 4">select *
+from tblAnimals
+where (location = 'Africa' or location = 'Asia') and Diet = 'Omnivore'		--Group OR in brackets </sql><sql name="SQL 5">update tblAnimals
+set &quot;length (m)&quot; = &quot;length (m)&quot;/100</sql><sql name="SQL 6"></sql><sql name="SQL 7">select *
+from tblAnimals
+order by &quot;life span (years)&quot;
+limit 10</sql><sql name="SQL 8">select class,round(avg(&quot;weight (kg)&quot;),2) as 'Average weight'	--Round outside aggregate function
+from tblAnimals
+group by class</sql><sql name="SQL 9"></sql><sql name="SQL 10">update tblAnimals
+set &quot;weight (kg)&quot; = 6
+where name = 'Eagle'</sql><sql name="SQL 11">delete 
+from tblAnimals
+where covering is null or covering = ''
+</sql><current_tab id="10"/></tab_sql></sqlb_project>
