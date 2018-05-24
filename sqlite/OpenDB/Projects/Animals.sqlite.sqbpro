@@ -11,9 +11,9 @@ from tblAnimals
 order by &quot;life span (years)&quot;
 limit 10</sql><sql name="SQL 8">select class,round(avg(&quot;weight (kg)&quot;),2) as 'Average weight'	--Round outside aggregate function
 from tblAnimals
-group by class</sql><sql name="SQL 9"></sql><sql name="SQL 10">update tblAnimals
+group by class</sql><sql name="SQL 10">update tblAnimals
 set &quot;weight (kg)&quot; = 6
 where name = 'Eagle'</sql><sql name="SQL 11">delete 
 from tblAnimals
 where covering is null or covering = ''
-</sql><current_tab id="1"/></tab_sql></sqlb_project>
+</sql><current_tab id="7"/></tab_sql></sqlb_project>
