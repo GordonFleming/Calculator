@@ -1,0 +1,9 @@
+Abbed#Engine#R80975.59#12#
+Cddef#Landing Gear#R200.29#6#
+Fgged#Aviation Air Filters#R320.28#20#
+Dnnyt#Oil Filter Adapters#R89.90#12#
+Bttgt#Airplane Batteries#R1550.50#23#
+Hfftg#Heat Shrinkable Tubing#R786.90#45#
+Shhyt#Solder Splicing Sleeves#R230.78#78#
+Sdder#Solder Wick#R145.78#30#
+Ehhyt#Engine Starters#R458.89#30#
