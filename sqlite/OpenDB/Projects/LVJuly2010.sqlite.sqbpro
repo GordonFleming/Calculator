@@ -1,12 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/24740/Desktop/NetBeansProjects/Calculator/sqlite/Practice/LV IT Prac July 2010 Files and Memo/LVJuly2010.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1316"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblLocations"/><default_encoding codec=""/><browsetable_info data="AAAAAwAAABIAdABiAGwAUABlAG8AcABsAGUAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////wAAAAD/////AAAAGAB0AGIAbABMAG8AYwBhAHQAaQBvAG4AcwAAAAAAAAAAAAAAAQAAAAIAAAB+AAAAAAAAAAAA//////////8AAAAA/////wAAABYAdABiAGwAQgBvAG8AawBpAG4AZwBzAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">select LocationName, suburb
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/flemi/Documents/GitHub/Calculator/sqlite/Practice/LV IT Prac July 2010 Files and Memo/LVJuly2010.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1316"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tblBookings"/><default_encoding codec=""/><browsetable_info data="AAAABAAAABIAdABiAGwAUABlAG8AcABsAGUAAAAAAAAAAAAAAAIAAAAEAAAAogAAAAMAAADvAAAAAAAAAAAA//////////8AAAAA/////wAAABgAdABiAGwATABvAGMAYQB0AGkAbwBuAHMAAAAAAAAAAAAAAAIAAAAIAAAAgAAAAAIAAAB+AAAAAAAAAAAA//////////8AAAAA/////wAAABYAdABiAGwAQgBvAG8AawBpAG4AZwBzAAAAAQAAAAAAAAABAAAAAwAAANIAAAAAAAAAAAD//////////wAAAAD/////AAAAHgBzAHEAbABpAHQAZQBfAHMAZQBxAHUAZQBuAGMAZQAAAAAAAAAAAAAAAQAAAAIAAABkAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">select LocationName, suburb
+from tblLocations
+order by filmcost</sql><sql name="SQL 2">select LocationName, Suburb, FilmCost
+from tblLocations
+where Film = 'True'
+</sql><sql name="SQL 3">select *
+from tblLocations
+where Film = 'False' and Photos = 'False' and Events = 'False' 
+order by EventsCost</sql><sql name="SQL 4">select LocationName, PhotosCost
+from tblLocations
+where Suburb = 'Camps Bay' and Photos = 'True' and (PhotosCost between 20000 and 24000)
+</sql><sql name="SQL 6">select Name, Email
+from tblPeople
+where Company = 'Ads R Us'</sql><sql name="SQL 7">select Suburb, EventsCost
 from tblLocations
-order by filmcost</sql><sql name="SQL 2">select LocationName, Suburb, FilmCost
+where EventsCost != 0	--or is not
+order by EventsCost
+limit 1</sql><sql name="SQL 8">select *
 from tblLocations
-where Film = 'True'
-</sql><sql name="SQL 3">select *
-from tblLocations
-where Film = 'False' and Photos = 'False' and Events = 'False' 
-order by EventsCost</sql><sql name="SQL 4">select LocationName, PhotosCost
-from tblLocations
-where Suburb = 'Camps Bay' and Photos = 'True' and (PhotosCost between 20000 and 24000)
-</sql><current_tab id="3"/></tab_sql></sqlb_project>
+where Suburb = 'Camps Bay'
+order by FilmCost desc
+limit 1</sql><sql name="SQL 9">select *,avg(PhotosCost) as Average
+from tblLocations	
+where Suburb = 'Kommetjie'												
+</sql><sql name="SQL 11">insert into tblPeople (Name,Email,Telephone,Company)
+values('Gordon Fleming','Gordon@shozi.com','0215645588','Private')</sql><sql name="SQL 12">update tblLocations
+set FilmCost = FilmCost + (0.11*FilmCost)
+where Suburb = 'Cape Town'
+ </sql><sql name="SQL 13">delete 
+from tblBookings
+where StartDate like '%06%' and locationID = 17 or locationID = 32 or locationID = 35	--Should use Date() func
+</sql><current_tab id="10"/></tab_sql></sqlb_project>
