@@ -15,7 +15,7 @@ where Continent = 'Europe'
 from tblStatistics</sql><sql name="SQL 12">select *
 from tblStatistics
 where Applications &gt;100000 
-and Date /*Can add [] as func = column name*/ like '%08%' --strftime('%m',Date,) = 08    (IDK)
+and strftime('%m',Date) = '08' 
 
 </sql><sql name="SQL 13">select *
 from tblStatistics
