@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\24740\Desktop\PrintDB.sqlite" foreign_keys="1"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="973"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="PrintLogs"/><default_encoding codec=""/><browsetable_info data="AAAAAQAAABIAUAByAGkAbgB0AEwAbwBnAHMAAAAAAAAAAAAAAAIAAAAGAAAAngAAAAUAAADjAAAAAAAAAAAA//////////8AAAAA/////w=="/></tab_browse><tab_sql><sql name="SQL 1">select FullName
+from PrintLogs
+group by FullName
+order by FullName
+</sql><sql name="SQL 2">select FullName, Email, PrinterModel 
+from PrintLogs
+where PrinterModel = 'Xerox WorkCentre 7120' and Email like '%student%'
+
+</sql><sql name="SQL 3">update PrintLogs
+set PrinterSerialNo = 'CNCKF11851'
+where PrinterSerialNo = 'CNCKF11815' and PrinterModel = 'HP LaserJet P2055dn'</sql><sql name="SQL 4">select count(Duplex) as Total
+from PrintLogs
+where Duplex = 'True'</sql><sql name="SQL 5">select substr(PrinterName,1,2) || substr(PrinterSerialNo,length(PrinterSerialNo)-2,3) as Code
+from PrintLogs</sql><sql name="SQL 6">select round(avg(Cost),2) as &quot;Average Cost Printed&quot;
+from PrintLogs
+where PrinterModel = 'Xerox WorkCentre 7120' or PrinterModel = 'HP LaserJet P2055dn'</sql><sql name="SQL 7">select strftime('%H',Date) as Hour, Count(TotalPages) as Count
+from PrintLogs
+group by strftime('%H',Date)</sql><sql name="SQL 8">select FullName, sum(TotalPages) as Total
+from PrintLogs
+where Printed = 'True'
+group by FullName
+order by sum(TotalPages) desc
+</sql><current_tab id="6"/></tab_sql></sqlb_project>
