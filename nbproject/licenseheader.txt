@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Some code:
+${licensePrefix}By Gordon Fleming
+<#if licenseLast??>
+${licenseLast}
+</#if>
