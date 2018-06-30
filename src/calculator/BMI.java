@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 public class BMI {public static void main(String[] args) {
      
-     //int height = 1;
-     //  int weight = 2;
+    //int height = 1;
+    //int weight = 2;
     //String height = ("2");
     //String weight = ("3");
   

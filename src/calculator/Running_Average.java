@@ -27,13 +27,8 @@ public class Running_Average {
               sum = sum + val;
               count = count +1;
               double avg = ((double)sum) / count;
-               System.out.println(avg);
-              
-              
+               System.out.println(avg);              
            }
-       }
-        
-
-        
+       }        
     }
 }
