@@ -79,6 +79,6 @@ public class AuthenticateTtR_V2 {
         Postscore = (running+totTunnels+longest);
         
         System.out.println("Hello "+team+", Your score was calculated as  " + Postscore + "  compared to your prescore of  " + Prescore); 
-        System.out.println(running+" "+totTunnels+" "+longest);
+        System.out.println("Trains total count is "+running+" and Tunnels are "+totTunnels+" plus longest "+longest);
     }
 }
