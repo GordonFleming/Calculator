@@ -5,9 +5,6 @@
  */
 package L5_U5;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 /**
  *
  * @author 24740
@@ -40,21 +37,8 @@ public class Source {
     public void setTitle(String title) {
         this.title = title;
     }
-    public String removeBrackets(){
-        String line;
-        try(Scanner scFile = new Scanner (new File ("Ref.txt"))){         
-            while(scFile.hasNext()){                                           
-                year = scFile.nextLine().replaceAll("[^()]","");
-            }       
-            scFile.close();            
-        }
-        catch (FileNotFoundException e){
-            System.out.println("File not found, check file path");
-        }  
-        return year;
-    }
     @Override                   
     public String toString(){                                                   
-    return getAuthor() + "\t" + year + "\t" + getTitle();
+    return getAuthor() + "\t" + year.replaceAll("[\\(\\)]","") + "\t" + getTitle();
     }
 }
