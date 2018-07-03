@@ -59,7 +59,7 @@ public class AuthenticateTtR_V2 {
         team = in.next();    
         System.out.println("Enter the score on the board: \n");
         Prescore = in.nextInt();
-        System.out.println("Now slowly enter the trains, length by length");
+        System.out.println("Now enter the train lengths below, order doesn't matter:");
         
         while(input!=0){ 
             input = in.nextInt();
