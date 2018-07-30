@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @author gordonfleming
  */
 public class AuthenticateTtR_V2 {
-    String team;
-    int input, running, Prescore, Postscore;
+    static String team;
+    static int input = 2, running = 0, Prescore, Postscore, tunnels, totTunnels, longest;
     int count=0;
     
     public AuthenticateTtR_V2(String t, int i, int r, int pre, int post){
@@ -23,8 +23,10 @@ public class AuthenticateTtR_V2 {
         Postscore = post;
     }
     
-    public int Calculator(){
+    public static void Calculator(){
         switch (input) {
+            case 0:
+                break;
             case 1:
                 running += 1;
                 break;
@@ -47,11 +49,6 @@ public class AuthenticateTtR_V2 {
                 System.out.println("Invalid statement!");
                 break;
         }
-        return running;
-    }
-    
-    public String toString(){
-        return "Hello "+team+", Your score was calculated as  " + Postscore + "  compared to your prescore of  " + Prescore;
     }
     
     public static void main(String[] args) {
@@ -59,16 +56,29 @@ public class AuthenticateTtR_V2 {
         System.out.println("\nComplete the following...\n");
         Scanner in = new Scanner (System.in);
         System.out.println("Enter your team name: \n");
-        String t = in.next();    
+        team = in.next();    
         System.out.println("Enter the score on the board: \n");
-        int pre = in.nextInt();
-        System.out.println("Now slowly enter the trains, length by length");
+        Prescore = in.nextInt();
+        System.out.println("Now enter the train lengths below, order doesn't matter:");
         
-        while(in.equals("exit") == false){ 
-            int i = in.nextInt();
-            //Calculator() += Calculator();
-            //AuthenticateTtR_V2 p1 = new AuthenticateTtR_V2(i);               
-            }
-        //int post += Calculator();       
+        while(input!=0){ 
+            input = in.nextInt();
+            Calculator();
+        }
+        
+        System.out.println("How many tunnels were left?");
+        tunnels = in.nextInt();
+        totTunnels += tunnels*4;
+        
+        System.out.println("Did you get the longest train?\t(Yes / No)");
+        if(in.next().equals("Yes")){
+            longest=10;
+        }else
+            longest = 0; 
+        
+        Postscore = (running+totTunnels+longest);
+        
+        System.out.println("Hello "+team+", Your score was calculated as  " + Postscore + "  compared to your prescore of  " + Prescore); 
+        System.out.println("Trains total count is "+running+" and Tunnels are "+totTunnels+" plus longest "+longest);
     }
 }

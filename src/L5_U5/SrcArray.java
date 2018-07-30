@@ -16,7 +16,8 @@ public class SrcArray {
     private Source [] src = new Source[150];                                      
     private int size = 0;
     public SrcArray()throws FileNotFoundException{
-        try(Scanner scFile = new Scanner (new File ("Ref.txt"))){           
+        try{
+            Scanner scFile = new Scanner (new File ("Ref.txt"));           
             String line,author,year,title;
             while(scFile.hasNext()){                                           
                 line = scFile.nextLine();                                      
@@ -42,4 +43,3 @@ public class SrcArray {
         return temp;
     }
 }
-
